@@ -21,6 +21,9 @@
 		04BF8009156A9AD2009AACA5 /* FindNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8008156A9AD2009AACA5 /* FindNavigationController.m */; };
 		04BF800C156A9AF5009AACA5 /* FindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF800B156A9AF5009AACA5 /* FindTableViewController.m */; };
 		04BF8014156A9CC9009AACA5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8013156A9CC9009AACA5 /* SettingsViewController.m */; };
+		B64812D5156AAF7D00FAE839 /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64812D4156AAF7D00FAE839 /* CreateEventViewController.m */; };
+		B64812D9156AAFB600FAE839 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64812D8156AAFB600FAE839 /* EventDetailViewController.m */; };
+		B64812E0156AD09800FAE839 /* InviteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B64812DF156AD09800FAE839 /* InviteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,12 @@
 		04BF800B156A9AF5009AACA5 /* FindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTableViewController.m; sourceTree = "<group>"; };
 		04BF8012156A9CC9009AACA5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		04BF8013156A9CC9009AACA5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B64812D3156AAF7D00FAE839 /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
+		B64812D4156AAF7D00FAE839 /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
+		B64812D7156AAFB600FAE839 /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
+		B64812D8156AAFB600FAE839 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
+		B64812DE156AD09700FAE839 /* InviteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteCell.h; sourceTree = "<group>"; };
+		B64812DF156AD09800FAE839 /* InviteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +161,12 @@
 		04BF8019156A9E11009AACA5 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				B64812DE156AD09700FAE839 /* InviteCell.h */,
+				B64812DF156AD09800FAE839 /* InviteCell.m */,
+				B64812D7156AAFB600FAE839 /* EventDetailViewController.h */,
+				B64812D8156AAFB600FAE839 /* EventDetailViewController.m */,
+				B64812D3156AAF7D00FAE839 /* CreateEventViewController.h */,
+				B64812D4156AAF7D00FAE839 /* CreateEventViewController.m */,
 				04BF8007156A9AD2009AACA5 /* FindNavigationController.h */,
 				04BF8008156A9AD2009AACA5 /* FindNavigationController.m */,
 				04BF800A156A9AF5009AACA5 /* FindTableViewController.h */,
@@ -232,6 +247,9 @@
 				04BF8009156A9AD2009AACA5 /* FindNavigationController.m in Sources */,
 				04BF800C156A9AF5009AACA5 /* FindTableViewController.m in Sources */,
 				04BF8014156A9CC9009AACA5 /* SettingsViewController.m in Sources */,
+				B64812D5156AAF7D00FAE839 /* CreateEventViewController.m in Sources */,
+				B64812D9156AAFB600FAE839 /* EventDetailViewController.m in Sources */,
+				B64812E0156AD09800FAE839 /* InviteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +361,7 @@
 				04BF7FFA156A9731009AACA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
