@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BF7FD4156A9731009AACA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BF7FD3156A9731009AACA5 /* UIKit.framework */; };
+		04BF7FD6156A9731009AACA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BF7FD5156A9731009AACA5 /* Foundation.framework */; };
+		04BF7FD8156A9731009AACA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BF7FD7156A9731009AACA5 /* CoreGraphics.framework */; };
+		04BF7FDE156A9731009AACA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04BF7FDC156A9731009AACA5 /* InfoPlist.strings */; };
+		04BF7FE0156A9731009AACA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7FDF156A9731009AACA5 /* main.m */; };
+		04BF7FE4156A9731009AACA5 /* WOBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7FE3156A9731009AACA5 /* WOBAppDelegate.m */; };
+		04BF7FE7156A9731009AACA5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF7FE5156A9731009AACA5 /* MainStoryboard.storyboard */; };
+		04BF7FFD156A98A8009AACA5 /* FeedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7FFC156A98A8009AACA5 /* FeedNavigationController.m */; };
+		04BF8000156A98C5009AACA5 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF7FFF156A98C5009AACA5 /* FeedTableViewController.m */; };
+		04BF8003156A98FF009AACA5 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8002156A98FF009AACA5 /* FriendsTableViewController.m */; };
+		04BF8006156A9910009AACA5 /* FriendsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8005156A9910009AACA5 /* FriendsNavigationController.m */; };
+		04BF8009156A9AD2009AACA5 /* FindNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8008156A9AD2009AACA5 /* FindNavigationController.m */; };
+		04BF800C156A9AF5009AACA5 /* FindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF800B156A9AF5009AACA5 /* FindTableViewController.m */; };
+		04BF8014156A9CC9009AACA5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8013156A9CC9009AACA5 /* SettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BF7FCF156A9730009AACA5 /* WorkOut-Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorkOut-Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BF7FD3156A9731009AACA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04BF7FD5156A9731009AACA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04BF7FD7156A9731009AACA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04BF7FDB156A9731009AACA5 /* WorkOut-Buddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkOut-Buddy-Info.plist"; sourceTree = "<group>"; };
+		04BF7FDD156A9731009AACA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04BF7FDF156A9731009AACA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04BF7FE1156A9731009AACA5 /* WorkOut-Buddy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorkOut-Buddy-Prefix.pch"; sourceTree = "<group>"; };
+		04BF7FE2156A9731009AACA5 /* WOBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WOBAppDelegate.h; sourceTree = "<group>"; };
+		04BF7FE3156A9731009AACA5 /* WOBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WOBAppDelegate.m; sourceTree = "<group>"; };
+		04BF7FE6156A9731009AACA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		04BF7FFB156A98A8009AACA5 /* FeedNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedNavigationController.h; sourceTree = "<group>"; };
+		04BF7FFC156A98A8009AACA5 /* FeedNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedNavigationController.m; sourceTree = "<group>"; };
+		04BF7FFE156A98C5009AACA5 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		04BF7FFF156A98C5009AACA5 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		04BF8001156A98FF009AACA5 /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
+		04BF8002156A98FF009AACA5 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		04BF8004156A9910009AACA5 /* FriendsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsNavigationController.h; sourceTree = "<group>"; };
+		04BF8005156A9910009AACA5 /* FriendsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsNavigationController.m; sourceTree = "<group>"; };
+		04BF8007156A9AD2009AACA5 /* FindNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindNavigationController.h; path = ../FindNavigationController.h; sourceTree = "<group>"; };
+		04BF8008156A9AD2009AACA5 /* FindNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindNavigationController.m; path = ../FindNavigationController.m; sourceTree = "<group>"; };
+		04BF800A156A9AF5009AACA5 /* FindTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindTableViewController.h; sourceTree = "<group>"; };
+		04BF800B156A9AF5009AACA5 /* FindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTableViewController.m; sourceTree = "<group>"; };
+		04BF8012156A9CC9009AACA5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		04BF8013156A9CC9009AACA5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BF7FCC156A9730009AACA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BF7FD4156A9731009AACA5 /* UIKit.framework in Frameworks */,
+				04BF7FD6156A9731009AACA5 /* Foundation.framework in Frameworks */,
+				04BF7FD8156A9731009AACA5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BF7FC4156A9730009AACA5 = {
+			isa = PBXGroup;
+			children = (
+				04BF7FD9156A9731009AACA5 /* WorkOut-Buddy */,
+				04BF7FD2156A9730009AACA5 /* Frameworks */,
+				04BF7FD0156A9730009AACA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04BF7FD0156A9730009AACA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BF7FCF156A9730009AACA5 /* WorkOut-Buddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BF7FD2156A9730009AACA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04BF7FD3156A9731009AACA5 /* UIKit.framework */,
+				04BF7FD5156A9731009AACA5 /* Foundation.framework */,
+				04BF7FD7156A9731009AACA5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04BF7FD9156A9731009AACA5 /* WorkOut-Buddy */ = {
+			isa = PBXGroup;
+			children = (
+				04BF7FE2156A9731009AACA5 /* WOBAppDelegate.h */,
+				04BF7FE3156A9731009AACA5 /* WOBAppDelegate.m */,
+				04BF7FE5156A9731009AACA5 /* MainStoryboard.storyboard */,
+				04BF8015156A9CD2009AACA5 /* Feed */,
+				04BF8019156A9E11009AACA5 /* Find */,
+				04BF8016156A9CE4009AACA5 /* Friends */,
+				04BF8017156A9CFB009AACA5 /* Settings */,
+				04BF7FDA156A9731009AACA5 /* Supporting Files */,
+			);
+			path = "WorkOut-Buddy";
+			sourceTree = "<group>";
+		};
+		04BF7FDA156A9731009AACA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04BF7FDB156A9731009AACA5 /* WorkOut-Buddy-Info.plist */,
+				04BF7FDC156A9731009AACA5 /* InfoPlist.strings */,
+				04BF7FDF156A9731009AACA5 /* main.m */,
+				04BF7FE1156A9731009AACA5 /* WorkOut-Buddy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04BF8015156A9CD2009AACA5 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				04BF7FFF156A98C5009AACA5 /* FeedTableViewController.m */,
+				04BF7FFB156A98A8009AACA5 /* FeedNavigationController.h */,
+				04BF7FFC156A98A8009AACA5 /* FeedNavigationController.m */,
+				04BF7FFE156A98C5009AACA5 /* FeedTableViewController.h */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		04BF8016156A9CE4009AACA5 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				04BF8001156A98FF009AACA5 /* FriendsTableViewController.h */,
+				04BF8002156A98FF009AACA5 /* FriendsTableViewController.m */,
+				04BF8004156A9910009AACA5 /* FriendsNavigationController.h */,
+				04BF8005156A9910009AACA5 /* FriendsNavigationController.m */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		04BF8017156A9CFB009AACA5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				04BF8012156A9CC9009AACA5 /* SettingsViewController.h */,
+				04BF8013156A9CC9009AACA5 /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		04BF8019156A9E11009AACA5 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				04BF8007156A9AD2009AACA5 /* FindNavigationController.h */,
+				04BF8008156A9AD2009AACA5 /* FindNavigationController.m */,
+				04BF800A156A9AF5009AACA5 /* FindTableViewController.h */,
+				04BF800B156A9AF5009AACA5 /* FindTableViewController.m */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BF7FCE156A9730009AACA5 /* WorkOut-Buddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BF7FF8156A9731009AACA5 /* Build configuration list for PBXNativeTarget "WorkOut-Buddy" */;
+			buildPhases = (
+				04BF7FCB156A9730009AACA5 /* Sources */,
+				04BF7FCC156A9730009AACA5 /* Frameworks */,
+				04BF7FCD156A9730009AACA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WorkOut-Buddy";
+			productName = "WorkOut-Buddy";
+			productReference = 04BF7FCF156A9730009AACA5 /* WorkOut-Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BF7FC6156A9730009AACA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WOB;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 04BF7FC9156A9730009AACA5 /* Build configuration list for PBXProject "WorkOut-Buddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04BF7FC4156A9730009AACA5;
+			productRefGroup = 04BF7FD0156A9730009AACA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BF7FCE156A9730009AACA5 /* WorkOut-Buddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BF7FCD156A9730009AACA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BF7FDE156A9731009AACA5 /* InfoPlist.strings in Resources */,
+				04BF7FE7156A9731009AACA5 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BF7FCB156A9730009AACA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BF7FE0156A9731009AACA5 /* main.m in Sources */,
+				04BF7FE4156A9731009AACA5 /* WOBAppDelegate.m in Sources */,
+				04BF7FFD156A98A8009AACA5 /* FeedNavigationController.m in Sources */,
+				04BF8000156A98C5009AACA5 /* FeedTableViewController.m in Sources */,
+				04BF8003156A98FF009AACA5 /* FriendsTableViewController.m in Sources */,
+				04BF8006156A9910009AACA5 /* FriendsNavigationController.m in Sources */,
+				04BF8009156A9AD2009AACA5 /* FindNavigationController.m in Sources */,
+				04BF800C156A9AF5009AACA5 /* FindTableViewController.m in Sources */,
+				04BF8014156A9CC9009AACA5 /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04BF7FDC156A9731009AACA5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BF7FDD156A9731009AACA5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04BF7FE5156A9731009AACA5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BF7FE6156A9731009AACA5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04BF7FF6156A9731009AACA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04BF7FF7156A9731009AACA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BF7FF9156A9731009AACA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkOut-Buddy/WorkOut-Buddy-Prefix.pch";
+				INFOPLIST_FILE = "WorkOut-Buddy/WorkOut-Buddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04BF7FFA156A9731009AACA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorkOut-Buddy/WorkOut-Buddy-Prefix.pch";
+				INFOPLIST_FILE = "WorkOut-Buddy/WorkOut-Buddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BF7FC9156A9730009AACA5 /* Build configuration list for PBXProject "WorkOut-Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BF7FF6156A9731009AACA5 /* Debug */,
+				04BF7FF7156A9731009AACA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BF7FF8156A9731009AACA5 /* Build configuration list for PBXNativeTarget "WorkOut-Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BF7FF9156A9731009AACA5 /* Debug */,
+				04BF7FFA156A9731009AACA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04BF7FC6156A9730009AACA5 /* Project object */;
+}
