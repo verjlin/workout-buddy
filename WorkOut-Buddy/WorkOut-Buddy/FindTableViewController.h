@@ -10,4 +10,11 @@
 
 @interface FindTableViewController : UITableViewController
 
+@property (nonatomic, strong) IBOutlet NSMutableArray *eventTitle;
+@property (nonatomic, strong) IBOutlet NSMutableArray *userPic;
+@property (nonatomic, strong) IBOutlet NSMutableArray *userName;
+@property (nonatomic, strong) IBOutlet NSMutableArray *time;
+@property (nonatomic, strong) IBOutlet NSMutableArray *place;
+@property (nonatomic, strong) IBOutlet NSMutableArray *description;
+
 @end
