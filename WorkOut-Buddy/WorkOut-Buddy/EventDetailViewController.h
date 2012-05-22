@@ -22,4 +22,10 @@
 @property (retain, nonatomic) IBOutlet UILabel *Place;
 @property (retain, nonatomic) IBOutlet UITextView *Description;
 
+@property (weak, nonatomic) IBOutlet UIButton *RSVPyes;
+-(IBAction)RSVPyes:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *RSVPno;
+-(IBAction)RSVPno:(id)sender;
+
 @end

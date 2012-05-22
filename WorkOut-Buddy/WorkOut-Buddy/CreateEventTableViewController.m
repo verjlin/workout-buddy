@@ -1,23 +1,22 @@
 //
-//  FindTableViewController.m
+//  CreateEventTableViewController.m
 //  WorkOut-Buddy
 //
-//  Created by  on 5/21/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Veronica Lin on 5/21/12.
+//  Copyright (c) 2012 Wellesley College. All rights reserved.
 //
 
-#import "FindTableViewController.h"
-#import "EventDetailViewController.h"
-#import "InviteCell.h"
+#import "CreateEventTableViewController.h"
 
-@interface FindTableViewController ()
+@interface CreateEventTableViewController ()
 
 @end
 
-@implementation FindTableViewController
+@implementation CreateEventTableViewController
 
-@synthesize eventTitle, userPic, userName, time, place, description;
-
+@synthesize what;
+@synthesize when;
+@synthesize where;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,6 +25,25 @@
         // Custom initialization
     }
     return self;
+}
+
+//-(IBAction)sentAlert:(id)sender {
+//         UIAlertView *postAlert = [[UIAlertView alloc] initWithTitle:@"Thank You!" message:@"Your post was successful!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+//        [postAlert show];
+//}
+
+//The following enables the textfields to disappear when something else is tapped.
+-(IBAction)textFieldDoneEditing:(id)sender
+{
+    [sender resignFirstResponder];
+    
+}
+
+-(IBAction)backgroundTap:(id)sender
+{
+    [what resignFirstResponder];
+    [when resignFirstResponder];
+    [where resignFirstResponder];
 }
 
 - (void)viewDidLoad
@@ -37,27 +55,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.eventTitle = [[NSMutableArray alloc] 
-                           initWithObjects:@"Swimming", @"Running", nil];
-    
-    self.userPic = [[NSMutableArray alloc] 
-                            initWithObjects:@"Red.png", @"Green.jpg", nil];
-    
-    self.userName = [[NSMutableArray alloc] 
-                       initWithObjects:@"Veronica", @"Emily", nil];
-    
-    self.time = [[NSMutableArray alloc] 
-                       initWithObjects:@"May 15, 1-3 pm", @"May 16, 7-8 pm", nil];
-    
-    self.place = [[NSMutableArray alloc] 
-                       initWithObjects:@"Wellesley College Chandler Pool", @"Around Wellesley", nil];
-    
-    self.description = [[NSMutableArray alloc] 
-                       initWithObjects:@"Please come join me in the pool - I'm planning on doing some pulling, kicking and sprinting.", @"I'm going to run for a couple miles through the town of Wellesley, I would love some company! We'll see the sunset too.", nil];
-   
-    //Set the title
-    self.navigationItem.title = @"Find Buddy"; 
 }
 
 - (void)viewDidUnload
@@ -72,20 +69,39 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma mark - Table view data source
+-(IBAction) sendInvite:(id)sender {
+    //[self.delegate SettingsDidSave:self];
+    
+    //[self.navigationController popToRootViewControllerAnimated:YES];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+
+-(IBAction) Cancel:(id)sender{
+    //[self.delegate SettingsDidSave:self];
+    
+    //[self.navigationController popToRootViewControllerAnimated:YES];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+/* #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 2;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 2;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -93,40 +109,9 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if(cell==nil) {
-        cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-    }
-    
-    cell.textLabel.text=[eventTitle objectAtIndex:indexPath.row];
-    
     // Configure the cell...
-    //UIImage *image = [UIImage imageNamed:@"53-house.png"];
-    //cell.imageView.image=image;
     
     return cell;
-
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self performSegueWithIdentifier:@"EventDetailPush" sender:self];
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-   /* NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    
-    EventDetailViewController *eventDetailViewController = [segue destinationViewController];
-    
-    if(selectedIndexPath.row==0) {
-        
-        //eventDetailViewController.UserImage=[UIImage imageNamed:@"3ClappLibrary.jpg"]; 
-        eventDetailViewController.title = @"Swimming";
-        eventDetailViewController.UserDString=@"Veronica";
-        eventDetailViewController.TimeDString=@"Tomorrow, 6-7 pm";
-        eventDetailViewController.PlaceDString=@"Wellesley College Chandler Pool";
-        eventDetailViewController.DescriptionDString=@"Come swim with me for an hour - I'm planning on doing some pulling, kicking and sprinting.";
-    } */
 }
 
 /*
@@ -168,10 +153,11 @@
 }
 */
 
+
 #pragma mark - Table view delegate
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -179,6 +165,6 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-//}
+}
 
 @end

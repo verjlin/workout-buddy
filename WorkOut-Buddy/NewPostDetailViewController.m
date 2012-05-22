@@ -1,22 +1,20 @@
 //
-//  CreateEventViewController.m
+//  NewPostDetailViewController.m
 //  WorkOut-Buddy
 //
 //  Created by Veronica Lin on 5/21/12.
 //  Copyright (c) 2012 Wellesley College. All rights reserved.
 //
 
-#import "CreateEventViewController.h"
+#import "NewPostDetailViewController.h"
 
-@interface CreateEventViewController ()
+@interface NewPostDetailViewController ()
 
 @end
 
-@implementation CreateEventViewController
+@implementation NewPostDetailViewController
 
-@synthesize what;
-@synthesize when;
-@synthesize where;
+@synthesize title, description;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,19 +25,18 @@
     return self;
 }
 
-//The following enables the textfields to disappear when something else is tapped.
 -(IBAction)textFieldDoneEditing:(id)sender
 {
     [sender resignFirstResponder];
-
+    
 }
 
 -(IBAction)backgroundTap:(id)sender
 {
-    [what resignFirstResponder];
-    [when resignFirstResponder];
-    [where resignFirstResponder];
+    [title resignFirstResponder];
+    [description resignFirstResponder];
 }
+
 
 - (void)viewDidLoad
 {
@@ -58,20 +55,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
--(IBAction) sendInvite:(id)sender {
-    //[self.delegate SettingsDidSave:self];
-    
-    //[self.navigationController popToRootViewControllerAnimated:YES];
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
 
+-(IBAction) sendPost:(id)sender {
+    
+       [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 
--(IBAction) Cancel:(id)sender{
-    //[self.delegate SettingsDidSave:self];
-    
-    //[self.navigationController popToRootViewControllerAnimated:YES];
+-(IBAction) Cancel:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
     

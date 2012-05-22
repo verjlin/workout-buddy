@@ -20,10 +20,23 @@
 		04BF8006156A9910009AACA5 /* FriendsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8005156A9910009AACA5 /* FriendsNavigationController.m */; };
 		04BF8009156A9AD2009AACA5 /* FindNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8008156A9AD2009AACA5 /* FindNavigationController.m */; };
 		04BF800C156A9AF5009AACA5 /* FindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF800B156A9AF5009AACA5 /* FindTableViewController.m */; };
-		04BF8014156A9CC9009AACA5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF8013156A9CC9009AACA5 /* SettingsViewController.m */; };
-		B64812D5156AAF7D00FAE839 /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64812D4156AAF7D00FAE839 /* CreateEventViewController.m */; };
+		B61D7179156B018A009277F8 /* noSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = B61D7175156B018A009277F8 /* noSelect.png */; };
+		B61D717A156B018A009277F8 /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = B61D7176156B018A009277F8 /* no.png */; };
+		B61D717B156B018A009277F8 /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = B61D7177156B018A009277F8 /* yes.png */; };
+		B61D717C156B018A009277F8 /* yesSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = B61D7178156B018A009277F8 /* yesSelect.png */; };
+		B61D7184156B0A56009277F8 /* PrivacyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D7183156B0A56009277F8 /* PrivacyTableViewController.m */; };
+		B61D7187156B0B8A009277F8 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D7186156B0B8A009277F8 /* SettingsTableViewController.m */; };
+		B63E250E156B1ACD00FC90FE /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B63E250D156B1ACD00FC90FE /* FeedCell.m */; };
+		B63E2511156B1C2800FC90FE /* FeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63E2510156B1C2800FC90FE /* FeedDetailViewController.m */; };
+		B63E2514156B1CCC00FC90FE /* NewPostDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63E2513156B1CCC00FC90FE /* NewPostDetailViewController.m */; };
+		B63E251A156B238500FC90FE /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63E2519156B238500FC90FE /* FilterTableViewController.m */; };
+		B63E251D156B300B00FC90FE /* ProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63E251C156B300B00FC90FE /* ProfileDetailViewController.m */; };
+		B63E2520156B310700FC90FE /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63E251F156B310600FC90FE /* MyProfileViewController.m */; };
+		B63E2523156B440A00FC90FE /* CreateEventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63E2522156B440A00FC90FE /* CreateEventTableViewController.m */; };
 		B64812D9156AAFB600FAE839 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64812D8156AAFB600FAE839 /* EventDetailViewController.m */; };
 		B64812E0156AD09800FAE839 /* InviteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B64812DF156AD09800FAE839 /* InviteCell.m */; };
+		B64812F1156AF6FA00FAE839 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = B64812EF156AF6FA00FAE839 /* Red.png */; };
+		B64812F2156AF6FA00FAE839 /* Green.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64812F0156AF6FA00FAE839 /* Green.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,14 +63,34 @@
 		04BF8008156A9AD2009AACA5 /* FindNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindNavigationController.m; path = ../FindNavigationController.m; sourceTree = "<group>"; };
 		04BF800A156A9AF5009AACA5 /* FindTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindTableViewController.h; sourceTree = "<group>"; };
 		04BF800B156A9AF5009AACA5 /* FindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTableViewController.m; sourceTree = "<group>"; };
-		04BF8012156A9CC9009AACA5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		04BF8013156A9CC9009AACA5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		B64812D3156AAF7D00FAE839 /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
-		B64812D4156AAF7D00FAE839 /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
+		B61D7175156B018A009277F8 /* noSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noSelect.png; sourceTree = "<group>"; };
+		B61D7176156B018A009277F8 /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no.png; sourceTree = "<group>"; };
+		B61D7177156B018A009277F8 /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes.png; sourceTree = "<group>"; };
+		B61D7178156B018A009277F8 /* yesSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yesSelect.png; sourceTree = "<group>"; };
+		B61D7182156B0A56009277F8 /* PrivacyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyTableViewController.h; sourceTree = "<group>"; };
+		B61D7183156B0A56009277F8 /* PrivacyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyTableViewController.m; sourceTree = "<group>"; };
+		B61D7185156B0B8A009277F8 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = ../SettingsTableViewController.h; sourceTree = "<group>"; };
+		B61D7186156B0B8A009277F8 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = ../SettingsTableViewController.m; sourceTree = "<group>"; };
+		B63E250C156B1ACD00FC90FE /* FeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCell.h; sourceTree = "<group>"; };
+		B63E250D156B1ACD00FC90FE /* FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCell.m; sourceTree = "<group>"; };
+		B63E250F156B1C2800FC90FE /* FeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailViewController.h; sourceTree = "<group>"; };
+		B63E2510156B1C2800FC90FE /* FeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailViewController.m; sourceTree = "<group>"; };
+		B63E2512156B1CCC00FC90FE /* NewPostDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewPostDetailViewController.h; path = ../NewPostDetailViewController.h; sourceTree = "<group>"; };
+		B63E2513156B1CCC00FC90FE /* NewPostDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewPostDetailViewController.m; path = ../NewPostDetailViewController.m; sourceTree = "<group>"; };
+		B63E2518156B238500FC90FE /* FilterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTableViewController.h; sourceTree = "<group>"; };
+		B63E2519156B238500FC90FE /* FilterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
+		B63E251B156B300B00FC90FE /* ProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDetailViewController.h; sourceTree = "<group>"; };
+		B63E251C156B300B00FC90FE /* ProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileDetailViewController.m; sourceTree = "<group>"; };
+		B63E251E156B310600FC90FE /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		B63E251F156B310600FC90FE /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		B63E2521156B440900FC90FE /* CreateEventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventTableViewController.h; sourceTree = "<group>"; };
+		B63E2522156B440A00FC90FE /* CreateEventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventTableViewController.m; sourceTree = "<group>"; };
 		B64812D7156AAFB600FAE839 /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
 		B64812D8156AAFB600FAE839 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
 		B64812DE156AD09700FAE839 /* InviteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteCell.h; sourceTree = "<group>"; };
 		B64812DF156AD09800FAE839 /* InviteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteCell.m; sourceTree = "<group>"; };
+		B64812EF156AF6FA00FAE839 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		B64812F0156AF6FA00FAE839 /* Green.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Green.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				04BF7FE2156A9731009AACA5 /* WOBAppDelegate.h */,
+				B64812ED156AF6D000FAE839 /* Images */,
 				04BF7FE3156A9731009AACA5 /* WOBAppDelegate.m */,
 				04BF7FE5156A9731009AACA5 /* MainStoryboard.storyboard */,
 				04BF8015156A9CD2009AACA5 /* Feed */,
@@ -130,10 +164,18 @@
 		04BF8015156A9CD2009AACA5 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				B63E2518156B238500FC90FE /* FilterTableViewController.h */,
+				B63E2519156B238500FC90FE /* FilterTableViewController.m */,
+				B63E2512156B1CCC00FC90FE /* NewPostDetailViewController.h */,
+				B63E2513156B1CCC00FC90FE /* NewPostDetailViewController.m */,
+				B63E250F156B1C2800FC90FE /* FeedDetailViewController.h */,
+				B63E2510156B1C2800FC90FE /* FeedDetailViewController.m */,
+				04BF7FFE156A98C5009AACA5 /* FeedTableViewController.h */,
 				04BF7FFF156A98C5009AACA5 /* FeedTableViewController.m */,
 				04BF7FFB156A98A8009AACA5 /* FeedNavigationController.h */,
 				04BF7FFC156A98A8009AACA5 /* FeedNavigationController.m */,
-				04BF7FFE156A98C5009AACA5 /* FeedTableViewController.h */,
+				B63E250C156B1ACD00FC90FE /* FeedCell.h */,
+				B63E250D156B1ACD00FC90FE /* FeedCell.m */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -141,6 +183,8 @@
 		04BF8016156A9CE4009AACA5 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				B63E251B156B300B00FC90FE /* ProfileDetailViewController.h */,
+				B63E251C156B300B00FC90FE /* ProfileDetailViewController.m */,
 				04BF8001156A98FF009AACA5 /* FriendsTableViewController.h */,
 				04BF8002156A98FF009AACA5 /* FriendsTableViewController.m */,
 				04BF8004156A9910009AACA5 /* FriendsNavigationController.h */,
@@ -152,8 +196,12 @@
 		04BF8017156A9CFB009AACA5 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				04BF8012156A9CC9009AACA5 /* SettingsViewController.h */,
-				04BF8013156A9CC9009AACA5 /* SettingsViewController.m */,
+				B63E251E156B310600FC90FE /* MyProfileViewController.h */,
+				B63E251F156B310600FC90FE /* MyProfileViewController.m */,
+				B61D7185156B0B8A009277F8 /* SettingsTableViewController.h */,
+				B61D7186156B0B8A009277F8 /* SettingsTableViewController.m */,
+				B61D7182156B0A56009277F8 /* PrivacyTableViewController.h */,
+				B61D7183156B0A56009277F8 /* PrivacyTableViewController.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -163,16 +211,29 @@
 			children = (
 				B64812DE156AD09700FAE839 /* InviteCell.h */,
 				B64812DF156AD09800FAE839 /* InviteCell.m */,
+				B63E2521156B440900FC90FE /* CreateEventTableViewController.h */,
+				B63E2522156B440A00FC90FE /* CreateEventTableViewController.m */,
 				B64812D7156AAFB600FAE839 /* EventDetailViewController.h */,
 				B64812D8156AAFB600FAE839 /* EventDetailViewController.m */,
-				B64812D3156AAF7D00FAE839 /* CreateEventViewController.h */,
-				B64812D4156AAF7D00FAE839 /* CreateEventViewController.m */,
 				04BF8007156A9AD2009AACA5 /* FindNavigationController.h */,
 				04BF8008156A9AD2009AACA5 /* FindNavigationController.m */,
 				04BF800A156A9AF5009AACA5 /* FindTableViewController.h */,
 				04BF800B156A9AF5009AACA5 /* FindTableViewController.m */,
 			);
 			name = Find;
+			sourceTree = "<group>";
+		};
+		B64812ED156AF6D000FAE839 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B61D7175156B018A009277F8 /* noSelect.png */,
+				B61D7176156B018A009277F8 /* no.png */,
+				B61D7177156B018A009277F8 /* yes.png */,
+				B61D7178156B018A009277F8 /* yesSelect.png */,
+				B64812EF156AF6FA00FAE839 /* Red.png */,
+				B64812F0156AF6FA00FAE839 /* Green.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +289,12 @@
 			files = (
 				04BF7FDE156A9731009AACA5 /* InfoPlist.strings in Resources */,
 				04BF7FE7156A9731009AACA5 /* MainStoryboard.storyboard in Resources */,
+				B64812F1156AF6FA00FAE839 /* Red.png in Resources */,
+				B64812F2156AF6FA00FAE839 /* Green.jpg in Resources */,
+				B61D7179156B018A009277F8 /* noSelect.png in Resources */,
+				B61D717A156B018A009277F8 /* no.png in Resources */,
+				B61D717B156B018A009277F8 /* yes.png in Resources */,
+				B61D717C156B018A009277F8 /* yesSelect.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +313,17 @@
 				04BF8006156A9910009AACA5 /* FriendsNavigationController.m in Sources */,
 				04BF8009156A9AD2009AACA5 /* FindNavigationController.m in Sources */,
 				04BF800C156A9AF5009AACA5 /* FindTableViewController.m in Sources */,
-				04BF8014156A9CC9009AACA5 /* SettingsViewController.m in Sources */,
-				B64812D5156AAF7D00FAE839 /* CreateEventViewController.m in Sources */,
 				B64812D9156AAFB600FAE839 /* EventDetailViewController.m in Sources */,
 				B64812E0156AD09800FAE839 /* InviteCell.m in Sources */,
+				B61D7184156B0A56009277F8 /* PrivacyTableViewController.m in Sources */,
+				B61D7187156B0B8A009277F8 /* SettingsTableViewController.m in Sources */,
+				B63E250E156B1ACD00FC90FE /* FeedCell.m in Sources */,
+				B63E2511156B1C2800FC90FE /* FeedDetailViewController.m in Sources */,
+				B63E2514156B1CCC00FC90FE /* NewPostDetailViewController.m in Sources */,
+				B63E251A156B238500FC90FE /* FilterTableViewController.m in Sources */,
+				B63E251D156B300B00FC90FE /* ProfileDetailViewController.m in Sources */,
+				B63E2520156B310700FC90FE /* MyProfileViewController.m in Sources */,
+				B63E2523156B440A00FC90FE /* CreateEventTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

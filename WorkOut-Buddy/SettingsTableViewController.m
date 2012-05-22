@@ -1,18 +1,28 @@
 //
-//  FeedTableViewController.m
+//  SettingsTableViewController.m
 //  WorkOut-Buddy
 //
-//  Created by  on 5/21/12.
+//  Created by KRISTIAN TRAN on 5/21/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "FeedTableViewController.h"
+#import "SettingsTableViewController.h"
+#import "MyProfileViewController.h"
 
-@interface FeedTableViewController ()
+@interface SettingsTableViewController ()
 
 @end
 
-@implementation FeedTableViewController
+@implementation SettingsTableViewController
+
+@synthesize SettingsNav;
+@synthesize versionNum;
+@synthesize PushNotifButton;
+@synthesize InviteAlertButton;
+@synthesize LoggedInName;
+@synthesize LoggedInPic;
+@synthesize SettingsLogout;
+@synthesize EditProf;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,6 +46,14 @@
 
 - (void)viewDidUnload
 {
+    [self setSettingsLogout:nil];
+    [self setEditProf:nil];
+    [self setLoggedInName:nil];
+    [self setLoggedInPic:nil];
+    [self setPushNotifButton:nil];
+    [self setInviteAlertButton:nil];
+    [self setVersionNum:nil];
+    [self setSettingsNav:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -47,33 +65,33 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-
 /*
- // Override to support conditional editing of the table view.
+ - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+ {
+ #warning Potentially incomplete method implementation.
+ // Return the number of sections.
+ return 0;
+ }
+ 
+ - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+ {
+ #warning Incomplete method implementation.
+ // Return the number of rows in the section.
+ return 0;
+ }
+ 
+ - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ static NSString *CellIdentifier = @"Cell";
+ UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+ 
+ // Configure the cell...
+ 
+ return cell;
+ } */
+
+ /*
+  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
  {
  // Return NO if you do not want the specified item to be editable.
@@ -114,9 +132,8 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+{ /*
     // Navigation logic may go here. Create and push another view controller.
-    /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.

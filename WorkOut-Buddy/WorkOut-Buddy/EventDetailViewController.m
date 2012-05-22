@@ -7,6 +7,7 @@
 //
 
 #import "EventDetailViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface EventDetailViewController ()
 
@@ -16,6 +17,7 @@
 
 @synthesize UserImage, UserDString, TimeDString, PlaceDString, DescriptionDString;
 @synthesize UserPhoto, UserName, Time, Place, Description;
+@synthesize RSVPyes, RSVPno;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,6 +48,26 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction)RSVPyes:(id)sender {
+   /* UIAlertView *RSVPyes = [[UIAlertView alloc] initWithTitle:@"RSVP Confirmation" message:@"Are you attending this event?" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes!", nil];
+    [RSVPyes show]; */
+    UIButton *RSVPYes = [UIButton buttonWithType:UIButtonTypeCustom];
+    [RSVPYes setBackgroundImage:[UIImage imageNamed:@"yes.png"] forState:UIControlStateNormal];
+    [RSVPYes setBackgroundImage:[UIImage imageNamed:@"yesSelect.png"] forState:UIControlStateSelected];
+    NSLog(@"in yes");
+    
+}
+
+-(IBAction)RSVPno:(id)sender {
+   /* UIAlertView *RSVPno = [[UIAlertView alloc] initWithTitle:@"RSVP Confirmation" message:@"Are you attending this event?" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"No", nil];
+    [RSVPno show]; */
+    UIButton *RSVPNo = [UIButton buttonWithType:UIButtonTypeCustom];
+    [RSVPNo setBackgroundImage:[UIImage imageNamed:@"no.png"] forState:UIControlStateNormal];
+    [RSVPNo setBackgroundImage:[UIImage imageNamed:@"noSelect.png"] forState:UIControlStateSelected];
+    NSLog(@"in no");
+
 }
 
 @end

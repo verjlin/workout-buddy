@@ -1,18 +1,18 @@
 //
-//  FeedTableViewController.m
+//  PrivacyTableViewController.m
 //  WorkOut-Buddy
 //
-//  Created by  on 5/21/12.
+//  Created by KRISTIAN TRAN on 5/21/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "FeedTableViewController.h"
+#import "PrivacyTableViewController.h"
 
-@interface FeedTableViewController ()
+@interface PrivacyTableViewController ()
 
 @end
 
-@implementation FeedTableViewController
+@implementation PrivacyTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -46,33 +46,37 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(IBAction)Done:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-
 /*
+ - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+ {
+ #warning Potentially incomplete method implementation.
+ // Return the number of sections.
+ return 0;
+ }
+ 
+ - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+ {
+ #warning Incomplete method implementation.
+ // Return the number of rows in the section.
+ return 0;
+ }
+ 
+ - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ static NSString *CellIdentifier = @"Cell";
+ UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+ 
+ // Configure the cell...
+ 
+ return cell;
+ }
+ 
+ 
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
  {
@@ -114,14 +118,19 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+
+{ [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSUInteger *selectedIndex = indexPath.row;
+    if (selectedIndex != NSNotFound)
+        
+    { UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:selectedIndex inSection:0]];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
+    selectedIndex = indexPath.row;
+    UITableViewCell *cell = 
+    [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
 }
 
 @end

@@ -1,22 +1,18 @@
 //
-//  CreateEventViewController.m
+//  MyProfileViewController.m
 //  WorkOut-Buddy
 //
 //  Created by Veronica Lin on 5/21/12.
 //  Copyright (c) 2012 Wellesley College. All rights reserved.
 //
 
-#import "CreateEventViewController.h"
+#import "MyProfileViewController.h"
 
-@interface CreateEventViewController ()
+@interface MyProfileViewController ()
 
 @end
 
-@implementation CreateEventViewController
-
-@synthesize what;
-@synthesize when;
-@synthesize where;
+@implementation MyProfileViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,20 +21,6 @@
         // Custom initialization
     }
     return self;
-}
-
-//The following enables the textfields to disappear when something else is tapped.
--(IBAction)textFieldDoneEditing:(id)sender
-{
-    [sender resignFirstResponder];
-
-}
-
--(IBAction)backgroundTap:(id)sender
-{
-    [what resignFirstResponder];
-    [when resignFirstResponder];
-    [where resignFirstResponder];
 }
 
 - (void)viewDidLoad
@@ -58,17 +40,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
--(IBAction) sendInvite:(id)sender {
-    //[self.delegate SettingsDidSave:self];
-    
-    //[self.navigationController popToRootViewControllerAnimated:YES];
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-
-}
-
-
--(IBAction) Cancel:(id)sender{
+-(IBAction) Back:(id)sender{
     //[self.delegate SettingsDidSave:self];
     
     //[self.navigationController popToRootViewControllerAnimated:YES];
@@ -76,6 +48,5 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
-
 
 @end
